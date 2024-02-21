@@ -5,3 +5,42 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+    font-family: monospace;
+}
+
+input {
+    text-decoration: none;
+}
+
+.background-pattern {
+    background: radial-gradient(
+            circle,
+            transparent 20%,
+            #ffffff 20%,
+            #ffffff 80%,
+            transparent 80%,
+            transparent
+        ),
+        radial-gradient(
+                circle,
+                transparent 20%,
+                #ffffff 20%,
+                #ffffff 80%,
+                transparent 80%,
+                transparent
+            )
+            42.5px 42.5px,
+        linear-gradient(
+                #5c5c5c 3.4000000000000004px,
+                transparent 3.4000000000000004px
+            )
+            0 -1.7000000000000002px,
+        linear-gradient(
+                90deg,
+                #5c5c5c 3.4000000000000004px,
+                #ffffff 3.4000000000000004px
+            ) -1.7000000000000002px 0;
+    background-size: 85px 85px, 85px 85px, 42.5px 42.5px, 42.5px 42.5px;
+}
